@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/question.ico" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+
+    <title>Central de Atendimento</title>
+
+  </head>
+
+  <body>
+
+    <header>
+      <br />
+      <br />
+      <h1 id="topo">Anuncie Já!</h1>
+    </header>
+
+    <nav>
+      <ul class="a">
+        <li><a href="index.html">INÍCIO</a></li>
+        <li><a href="login.html">CADASTRO</a></li>
+        <li class="direita"><a class="active" href="anuncio.html">ANUNCIAR</a></li>
+        <li><a href="assinatura.html">ASSINATURAS</a></li>
+        <li><a href="catalogo.html">ANÚNCIOS RECENTES</a></li>
+      </ul>
+    </nav>
+
+    <main class="clearfix">
+      <div class="clearfix">
+        <section>
+          <form action="http://localhost/meusite/ajuda/" method="get">
+            <fieldset>
+              <br />
+              <h2>Central de Atendimento</h2> <br />
+              <br />
+              <h4>Assunto</h4>
+              <br />
+
+              <select class="combo">
+                <optgroup label="Dúvidas">
+                  <option value="duvidas_conta">Minha Conta</option>
+                  <option value="duvidas_compras" >Compras</option>
+                  <option value="duvidas_vendas">Vendas</option>
+                </optgroup>
+
+                <optgroup label="Reclamações">
+                  <option value="reclamacoes_conta">Minha Conta</option>
+                  <option value="reclamacoes_compras">Compras</option>
+                  <option value="reclamacoes_vendas">Vendas</option>
+                </optgroup>
+
+                <optgroup label="Sugestões">
+                  <option value="sugestoes_conta">Minha Conta</option>
+                  <option value="sugestoes_compras">Compras</option>
+                  <option value="sugestoes_vendas">Vendas</option>
+                </optgroup>
+
+                <optgroup label="Outros">
+                  <option value="outros">Outros</option>
+                </optgroup>
+              </select>
+
+              <br />
+              <br />
+
+              <h4>Mensagem</h4> <br />
+              <textarea rows="12" cols="52" name="mensagem_atendimento" required></textarea>
+              <br />
+
+              <input type="reset" value="Limpar" class="clear" />
+              <input type="submit" value="Enviar" class="submit" />
+              <br />
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </main>
+
+
+    <h5 class="centro"><a href="#topo">MENU</a></h5>
+
+    <footer>
+      <div id="rodape">
+      	<h3 id="autor">Classificados</h3>
+      	<p>
+          Todos os Direitos Reservados<br />Analise e Desenvolvimento de Sistemas<br />
+          Alunos Vanessa Ribeiro Koch & Leonardo Rodrigues<br />Programação para Internet I
+          <br />
+          <br />
+          Visite nossas redes sociais:
+        </p>
+      </div>
+
+    	<div id="redes-sociais">
+    		<a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="https://instagram.com" target="_blank"><img src="img/insta.png" alt="Instagram"></a>
+        <a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
+    	</div>
+    </footer>
+
+  </body>
+</html>
