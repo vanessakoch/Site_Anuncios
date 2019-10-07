@@ -1,0 +1,341 @@
+  .centro {
+    text-align: center;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+    font-family: 'Asap', sans-serif;
+  }
+  .input-field {
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+  }
+  .sub {
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    padding: 15px;
+  }
+  .combo {
+    width: 195px;
+    height: 25px;
+  }
+  .submit {
+    background-color: #23377D;
+    color: white;
+    padding: 8px 25px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Asap', sans-serif;
+  }
+  .buscar {
+    width: 600px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+  }
+  header {
+    background-color: lightblue;
+    border: 5px outset gray;
+  }
+  main {
+    text-align: center;
+    align-items: center;
+  }
+  p {
+    font-size: 18px;
+    font-family: 'Varela Round', sans-serif;
+  }
+  h1 {
+    background-color:rgb(0, 0, 71);
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-family: 'Asap', sans-serif;
+    border-bottom: 6px solid black;
+    text-align: center;
+    padding: 15px;
+  }
+  aside {
+    float: right;
+    margin-right: 50px;
+    margin-top: 30px;
+    width: 300px;
+    padding: 10px;
+  }
+  aside.b {
+    float: right;
+    width: 400px;
+    padding: 20px;
+    margin-top: 150px;
+    margin-right: 100px;
+    background-color: #F5F5F5;
+    height: 120px;
+    border: 3px dotted black;
+    overflow: scroll;
+  }
+  div.relative {
+    position: relative;
+    margin-top: 80px;
+    margin-left: 780px;
+    padding: 10px;
+    z-index: -1;
+    background-color: rgb(0, 0, 71);
+    color: white;
+    border: 5px outset #80CBC4;
+  }
+  tbody#destaque:hover, tr:hover {
+    background-color: #ccc;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  h3 {
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+  }
+  h3.b {
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    border-left: 6px solid blue;
+    background-color: lightgrey;
+    padding: 15px;
+  }
+  h4, h5 {
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+  }
+  img {
+    border-radius: 50px;
+  }
+  article {
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+    padding: 15px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #E0E0E0;
+    border-radius: 100px;
+  }
+  footer{
+    background-color:#212121;
+    font-family: 'Asap', sans-serif;
+    border:2px solid black;
+    border-radius: 18px;
+    text-align: center;
+    color: white;
+    padding: 15px;
+  }
+  fieldset {
+    background-color: #FAFAFA;
+    flex-direction: row;
+    background: #ffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 4px -2px #989898;
+  }
+  table, th, td {
+    border: solid 1px black;
+    border-collapse: collapse;
+    padding: 10px;
+    margin-left: 50px;
+  }
+  th {
+    font-family: 'Asap', sans-serif;
+    background-color:#151B54;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+  }
+  tr:nth-child(even) {
+    background-color: #BDBDBD;
+  }
+  .cabecalho {
+    height: 110px;
+    width: 290px;
+    display: flex;
+  }
+  .termo {
+    color: #778899;
+    font-size: 10px;
+    text-align: center;
+  }
+  .bloco {
+    display: block;
+    text-align: right;
+    font-family: 'Asap', sans-serif;
+  }
+  .logo {
+    align-items: center;
+  }
+  tfoot {
+    background-color: #90CAF9;
+    color: #151B54;
+    font-family: 'Asap', sans-serif;
+  }
+  input {
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+  }
+  select {
+    width: 120px ;
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+  }
+  .menu-img {
+    margin-left:40px;
+    margin-right: 40px;
+  }
+  .clear{
+    background-color: #6D7B8D;
+    color: white;
+    padding: 6px 20px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Asap', sans-serif;
+  }
+  form * {
+    display: inline-table;
+    margin: 5px 10px;
+  }
+  address {
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+  }
+  ol, ul {
+    text-align: justify;
+    font-family: 'Asap', sans-serif;
+  }
+  .holder {
+    display: flex;
+    justify-content: center;
+  }
+  .imagem {
+    width: 200px;
+    margin: 10px;
+    z-index: -1;
+    position: relative;
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+  }
+  .imagem::after {
+    content: attr(data-title);
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+    left: 0;
+  }
+  .menu-icone {
+    width: 97%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 40px;
+    border: 0px;
+  }
+  .facebook {
+    width: 350px;
+    height: 35px;
+    border-radius: 40px;
+    border: 0px;
+    background-color: DodgerBlue;
+    color: #ffff;
+    font-size: 18px;
+    font-family: 'Asap', sans-serif;
+  }
+  .cadastrar {
+    width: 200px;
+    height: 35px;
+    border: 0px;
+    border-radius: 40px;
+    background-color: #FFA500;
+    color: #ffff;
+    font-size: 18px;
+    font-family: 'Asap', sans-serif;
+  }
+  .gmail {
+    width: 350px;
+    height: 35px;
+    border-radius: 40px;
+    border: 0px;
+    background-color: MediumSeaGreen;
+    color: #ffff;
+    font-size: 18px;
+    font-family: 'Asap', sans-serif;
+  }
+  #foto-texto {
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Asap', sans-serif;
+  }
+  #autor{
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+  }
+  #redes-sociais{
+    text-align: center;
+    background: #fff;
+    padding: 5px;
+  }
+  #rodape{
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 2px #000;
+  }
+  ul.a {
+    list-style-type: none;
+    border: 5px outset #555;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #9E9E9E;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  ul.b {
+    margin-top: 10px;
+    list-style-type: circle;
+  }
+  ul.c {
+    margin-top: 20px;
+    list-style-type: square;
+  }
+  li {
+    float: left;
+  }
+  .direita {
+    float: right;
+  }
+  li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  li a:hover:not(.active) {
+    background-color: #FF8A65;
+  }
+  .active {
+    background-color: yellow;
+  }
+  a:link {
+    color: lightblue;
+  }
+  a:visited {
+    color: black;
+  }
+  a:hover {
+    color: #1A237E;
+    font-size: 17px;
+  }
+  a:active {
+    color: yellow;
+  }
