@@ -10,6 +10,10 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 		<title>Login</title>
 
@@ -23,15 +27,30 @@
 			<h1 id="topo">Anuncie Já!</h1>
 		</header>
 
-		<nav>
-			<ul class="a">
-				<li><a href="index.html">INÍCIO</a></li>
-				<li><a href="criarConta.html">CADASTRAR</a></li>
-				<li class="direita"><a class="active" href="anuncio.html">ANUNCIAR</a></li>
-				<li><a href="assinatura.html">ASSINATURAS</a></li>
-				<li><a href="ajuda.html">AJUDA</a></li>
-				<li><a href="catalogo.html">ANÚNCIOS RECENTES</a></li>
-			</ul>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<a class="navbar-brand" href="index.html">INÍCIO</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="criarConta.html">CADASTRAR</a>
+					</li>
+					<li class="nav-item">
+						<a href="assinatura.html">ASSINATURAS</a>
+					</li>
+					<li class="nav-item">
+						<a href="ajuda.html">AJUDA</a>
+					</li>
+					<li class="nav-item">
+						<a href="catalogo.html">ANÚNCIOS RECENTES</a>
+					</li>
+					<li class="nav-item">
+						<a class="active" href="anuncio.html">ANUNCIAR</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 
 		<main>
@@ -67,7 +86,7 @@
 				</div>
 			</section>
 			<br />
-			<div class="termo">
+			<div class="tuso">
 				Ao continuar, você concorda com os <a href="termos.html" target="_blank">Termos de Uso</a> e a <a href="termos.html" target="_blank">Política de Privacidade</a> da SALE, <br /> e também, em receber comunicações via e-mail e push da SALE e seus parceiros.
 			</div>
 			<br />

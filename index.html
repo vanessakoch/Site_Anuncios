@@ -9,6 +9,10 @@
     <meta name="author" content="Vanessa Ribeiro Koch & Leonardo Rodrigues" />
     <meta name="robots" content="index,follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <link rel="icon" href="img/house.ico" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -26,17 +30,32 @@
         <br />
         <h1 id="topo">Anuncie Já!</h1>
     </header>
+    <h2>O melhor site de busca da internet.</h2>
 
-    <nav>
-      <h2>O melhor site de busca da internet.</h2>
-      <ul class="a">
-        <li><a href="#autor">AUTOR</a></li>
-        <li><a href="login.html">CADASTRO</a></li>
-        <li><a href="assinatura.html">ASSINATURAS</a></li>
-        <li class="direita"><a class="active" href="anuncio.html">ANUNCIAR</a></li>
-        <li><a href="ajuda.html">AJUDA</a></li>
-        <li><a href="catalogo.html">ANÚNCIOS RECENTES</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="#autor">AUTOR</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="login.html">CADASTRO</a>
+          </li>
+          <li class="nav-item">
+            <a href="assinatura.html">ASSINATURAS</a>
+          </li>
+          <li class="nav-item">
+            <a href="ajuda.html">AJUDA</a>
+          </li>
+          <li class="nav-item">
+            <a href="catalogo.html">ANÚNCIOS RECENTES</a>
+          </li>
+          <li class="nav-item">
+            <a class="active" href="anuncio.html">ANUNCIAR</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <main>
@@ -100,29 +119,19 @@
         <br />
         <br />
         </div>
-        <div class="relative">
-          Aumente sua renda!
-        </div>
       </section>
     </main>
 
-    <aside class="b">
-      <p>Caso não fique satisfeito com o produto, oferecemos uma garantia de 30 dias para devolução e ressarcimento do valor pago. <br />
-        Se ocorrer algum problema é só entrar em contato conosco que um consultor irá te atender prontamente! <br /> <br />
-        Agora imagine você utilizando o produto e desfrutando de todos os benefícios que ele oferece! <br /> <br />
-        <mark>Aproveite agora mesmo!</mark>
-      </p>
-    </aside>
-
     <article>
       <br />
+      <p><i>Aumente sua renda!</i></p>
       <div>
         <a href="anuncio.html" target="_blank"><img src="img/querovender.png" alt="Anúncio em laranjado chamando atenção para iniciar uma venda" title="Faça um bom negócio" /></a>
         <br />
         <br />
       </div>
+      <h5><a href="#topo">INÍCIO</a> </h5>
     </article>
-    <h5><a href="#topo">INÍCIO</a> </h5>
 
     <footer>
       <div id="rodape">
@@ -141,8 +150,11 @@
         <a href="https://instagram.com" target="_blank"><img src="img/insta.png" alt="Instagram"></a>
         <a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
     	</div>
-      <br />
-      <a href="termos.html" target="_blank">Termo de Uso e Política de Privacidade</a>
+
+      <div class="termo">
+        <br />
+        <a href="termos.html" target="_blank">Termo de Uso e Política de Privacidade</a>
+      </div>
     </footer>
 
   </body>
