@@ -51,7 +51,6 @@
 		</nav>
 
 		<main>
-			<section>
 				<div class="container">
 				  <form id="criarSenha" action="http://localhost/login.html" class="needs-validation" novalidate>
 						<fieldset>
@@ -92,13 +91,10 @@
 
 
 				<script>
-				// Disable form submissions if there are invalid fields
 				(function() {
 				  'use strict';
 				  window.addEventListener('load', function() {
-				    // Get the forms we want to add validation styles to
 				    var forms = document.getElementsByClassName('needs-validation');
-				    // Loop over them and prevent submission
 				    var validation = Array.prototype.filter.call(forms, function(form) {
 				      form.addEventListener('submit', function(event) {
 				        if (form.checkValidity() === false) {
@@ -111,9 +107,8 @@
 				  }, false);
 				})();
 				</script>
+			</div>
 
-				</div>
-			</section>
 			<br />
 			<div class="tuso">
 				Ao continuar, você concorda com os <a href="termos.html" target="_blank">Termos de Uso</a> e a <a href="termos.html" target="_blank">Política de Privacidade</a> da SALE, <br /> e também, em receber comunicações via e-mail e push da SALE e seus parceiros.

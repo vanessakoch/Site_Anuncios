@@ -49,9 +49,9 @@
         </li>
       </ul>
     </nav>
-    <br /> 
+    <br />
+
     <main>
-      <section>
         <div class="container">
           <fieldset>
           <form action="http://localhost/meusite/anuncio/" class="needs-validation" novalidate>
@@ -78,7 +78,7 @@
             </div>
             <br />
             <div class="form-group">
-              <label for="categoria">Categoria:</label>
+              <label>Categoria:</label>
                 <select class="combo">
                   <optgroup label="Categoria">
                     <option value="catg_eletro">Eletrônicos e Celulares</option>
@@ -94,7 +94,7 @@
               <br />
               <div class="form-group">
                 <label for="preco">Preço R$:</label>
-                <input type="number" class="form-control" step="0.01" placeholder="Ex: 1000,00" name="preco" required>
+                <input type="number" class="form-control" id="preco" step="0.01" placeholder="Ex: 1000,00" name="preco" required>
                 <div class="valid-feedback">Válido.</div>
                 <div class="invalid-feedback">Por favor preencha este campo.</div>
               </div>
@@ -103,8 +103,9 @@
             <button id ="publicar" type="submit" class="btn btn-primary">Publicar</button>
             <br />
             <br />
-          </fieldset>
           </form>
+        </fieldset>
+
           <script>
           (function() {
             'use strict';
@@ -122,7 +123,6 @@
             }, false);
           })();
           </script>
-        </section>
       </div>
     </main>
 

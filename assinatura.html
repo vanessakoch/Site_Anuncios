@@ -52,99 +52,116 @@
 
     <main>
       <div class="container">
-          <section>
-            <fieldset>
-              <br />
-              <br>
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th>Benefício</th>
-                    <th>Gratuíto</th>
-                    <th>Básico</th>
-                    <th>Premium</th>
-                    <th>Empresarial</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Anúncio Diário</td>
-                    <td>2</td>
-                    <td>6</td>
-                    <td>20</td>
-                    <td>Ilimitado</td>
-                  </tr>
-                  <tr>
-                    <td>Foto por Anúncio</td>
-                    <td>2</td>
-                    <td>4</td>
-                    <td>10</td>
-                    <td>Ilimitado</td>
-                  </tr>
-                  <tr>
-                    <td>Pesquisa Diária</td>
-                    <td>10</td>
-                    <td>18</td>
-                    <td>Ilimitado</td>
-                    <td>Ilimitado</td>
-                  </tr>
-                  <tr>
-                    <td>Chat (Vendedor/Comprador)</td>
-                    <td>X</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                  </tr>
-                  <tr>
-                    <td>Topo do site Semanalmente</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>Sim</td>
-                  </tr>
-                  <tr>
-                    <td>Acompanhamento profissional</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>Sim</td>
-                    <td>Sim</td>
-                  </tr>
-                  <tr>
-                    <td>Relatórios Avançados</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>Sim</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td>VALOR MENSAL</td>
-                    <td>R$ 0,00</td>
-                    <td>R$ 29,90</td>
-                    <td>R$ 69,90</td>
-                    <td>R$ 129,90</td>
-                  </tr>
-                </tfoot>
-              </table>
-            </fieldset>
-          </section>
+          <fieldset>
+            <br />
+            <br>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Benefício</th>
+                  <th>Gratuíto</th>
+                  <th>Básico</th>
+                  <th>Premium</th>
+                  <th>Empresarial</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Anúncio Diário</td>
+                  <td>2</td>
+                  <td>6</td>
+                  <td>20</td>
+                  <td>Ilimitado</td>
+                </tr>
+                <tr>
+                  <td>Foto por Anúncio</td>
+                  <td>2</td>
+                  <td>4</td>
+                  <td>10</td>
+                  <td>Ilimitado</td>
+                </tr>
+                <tr>
+                  <td>Pesquisa Diária</td>
+                  <td>10</td>
+                  <td>18</td>
+                  <td>Ilimitado</td>
+                  <td>Ilimitado</td>
+                </tr>
+                <tr>
+                  <td>Chat (Vendedor/Comprador)</td>
+                  <td>X</td>
+                  <td>Sim</td>
+                  <td>Sim</td>
+                  <td>Sim</td>
+                </tr>
+                <tr>
+                  <td>Topo do site Semanalmente</td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td>Sim</td>
+                </tr>
+                <tr>
+                  <td>Acompanhamento profissional</td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td>Sim</td>
+                  <td>Sim</td>
+                </tr>
+                <tr>
+                  <td>Relatórios Avançados</td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td>X</td>
+                  <td>Sim</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>VALOR MENSAL</td>
+                  <td>R$ 0,00</td>
+                  <td>R$ 29,90</td>
+                  <td>R$ 69,90</td>
+                  <td>R$ 129,90</td>
+                </tr>
+              </tfoot>
+            </table>
+          </fieldset>
         <br />
       </div>
+      <br />
 
-      <fieldset>
-        <h3>Selecione</h3>
-        <input type="checkbox" name="gratuito" value="gratuito" checked/>Gratuíto
-        <input type="checkbox" name="basico" value="basico" />Básico
-        <input type="checkbox" name="premium" value="premium" />Premium
-        <input type="checkbox" name="empresarial" value="empresarial" />Empresarial
+      <div class="container">
+        <h3>Selecione uma assinatura</h3>
         <br />
-        <br />
-        <button id="assinatura" type="button" class="btn btn-primary">Assinar</button>
-        <br />
-        <br />
-      </fieldset>
+        <form action="http://localhost/meusite/assinatura/">
+          <div class="form-check-inline">
+            <label class="form-check-label" for="radio1">
+              <input type="radio" class="form-check-input" id="radio1" name="optradio" value="gratuito" checked>Gratuíto
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label" for="radio2">
+              <input type="radio" class="form-check-input" id="radio2" name="optradio" value="basico">Básico
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label" for="radio3">
+              <input type="radio" class="form-check-input" id="radio3" name="optradio" value="premium">Premium
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label" for="radio4">
+              <input type="radio" class="form-check-input" id="radio4" name="optradio" value="empresarial">Empresarial
+            </label>
+          </div>
+          <br />
+          <br />
+          <button id="assinatura" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
     </main>
+    <br />
 
     <footer>
       <div id="rodape">
