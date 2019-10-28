@@ -2,10 +2,8 @@
 <html lang="pt-br">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="icon" href="img/assinatura.ico" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
@@ -14,145 +12,137 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
     <title>Assinatura</title>
-
   </head>
 
   <body>
 
     <header>
-      <br />
-      <br />
       <h1>Anuncie Já!</h1>
     </header>
 
     <h2>Central de Assinaturas</h2>
 
-
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
       <a class="navbar-brand" href="index.html">INÍCIO</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="login.html">CADASTRO</a>
-          </li>
-          <li class="nav-item">
-            <a href="#assinatura">ASSINAR</a>
-          </li>
-          <li class="nav-item">
-            <a href="ajuda.html">AJUDA</a>
-          </li>
-          <li class="nav-item">
-            <a href="catalogo.html">ANÚNCIOS RECENTES</a>
-          </li>
-          <li class="nav-item">
-            <a class="active" href="anuncio.html">ANUNCIAR</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            CADASTRO
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="login.html">ENTRAR</a>
+            <a class="dropdown-item" href="criarConta.html">CRIAR CONTA</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#assinatura">ASSINAR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ajuda.html">AJUDA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="catalogo.html">ANÚNCIOS RECENTES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="anuncio.html">ANUNCIAR</a>
+        </li>
+      </ul>
+    </nav >
 
-    <main class="clearfix">
-      <div class="clearfix">
-        <section>
-          <fieldset>
-            <br />
-            <aside>
-              <a href="#assinar"><img src="img/plano.png" alt="Planos de Assinatura" title="Assinaturas" /></a>
-            </aside>
-            <br>
-            <table>
-              <thead>
-                <tr>
-                  <th>Benefício</th>
-                  <th>Gratuíto</th>
-                  <th>Básico</th>
-                  <th>Premium</th>
-                  <th>Empresarial</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Anúncio Diário</td>
-                  <td>2</td>
-                  <td>6</td>
-                  <td>20</td>
-                  <td>Ilimitado</td>
-                </tr>
-                <tr>
-                  <td>Foto por Anúncio</td>
-                  <td>2</td>
-                  <td>4</td>
-                  <td>10</td>
-                  <td>Ilimitado</td>
-                </tr>
-                <tr>
-                  <td>Pesquisa Diária</td>
-                  <td>10</td>
-                  <td>18</td>
-                  <td>Ilimitado</td>
-                  <td>Ilimitado</td>
-                </tr>
-                <tr>
-                  <td>Chat (Vendedor/Comprador)</td>
-                  <td>X</td>
-                  <td>Sim</td>
-                  <td>Sim</td>
-                  <td>Sim</td>
-                </tr>
-                <tr>
-                  <td>Topo do site Semanalmente</td>
-                  <td>X</td>
-                  <td>X</td>
-                  <td>X</td>
-                  <td>Sim</td>
-                </tr>
-                <tr>
-                  <td>Acompanhamento profissional</td>
-                  <td>X</td>
-                  <td>X</td>
-                  <td>Sim</td>
-                  <td>Sim</td>
-                </tr>
-                <tr>
-                  <td>Relatórios Avançados</td>
-                  <td>X</td>
-                  <td>X</td>
-                  <td>X</td>
-                  <td>Sim</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td>VALOR MENSAL</td>
-                  <td>R$ 0,00</td>
-                  <td>R$ 29,90</td>
-                  <td>R$ 69,90</td>
-                  <td>R$ 129,90</td>
-                </tr>
-              </tfoot>
-            </table>
-            <br />
-            <br />
-          </fieldset>
-        </section>
+    <main>
+      <div class="container">
+          <section>
+            <fieldset>
+              <br />
+              <br>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Benefício</th>
+                    <th>Gratuíto</th>
+                    <th>Básico</th>
+                    <th>Premium</th>
+                    <th>Empresarial</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Anúncio Diário</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>20</td>
+                    <td>Ilimitado</td>
+                  </tr>
+                  <tr>
+                    <td>Foto por Anúncio</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>Ilimitado</td>
+                  </tr>
+                  <tr>
+                    <td>Pesquisa Diária</td>
+                    <td>10</td>
+                    <td>18</td>
+                    <td>Ilimitado</td>
+                    <td>Ilimitado</td>
+                  </tr>
+                  <tr>
+                    <td>Chat (Vendedor/Comprador)</td>
+                    <td>X</td>
+                    <td>Sim</td>
+                    <td>Sim</td>
+                    <td>Sim</td>
+                  </tr>
+                  <tr>
+                    <td>Topo do site Semanalmente</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>Sim</td>
+                  </tr>
+                  <tr>
+                    <td>Acompanhamento profissional</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>Sim</td>
+                    <td>Sim</td>
+                  </tr>
+                  <tr>
+                    <td>Relatórios Avançados</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>Sim</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td>VALOR MENSAL</td>
+                    <td>R$ 0,00</td>
+                    <td>R$ 29,90</td>
+                    <td>R$ 69,90</td>
+                    <td>R$ 129,90</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </fieldset>
+          </section>
+        <br />
       </div>
-      <br />
-      <br />
-      <br />
+
       <fieldset>
-        <h3 id="assinar">Selecione</h3>
+        <h3>Selecione</h3>
         <input type="checkbox" name="gratuito" value="gratuito" checked/>Gratuíto
         <input type="checkbox" name="basico" value="basico" />Básico
         <input type="checkbox" name="premium" value="premium" />Premium
         <input type="checkbox" name="empresarial" value="empresarial" />Empresarial
         <br />
         <br />
-        <input type="submit" value="Assinar" id="assinatura" class="submit" />
+        <button id="assinatura" type="button" class="btn btn-primary">Assinar</button>
+        <br />
+        <br />
       </fieldset>
     </main>
 
