@@ -9,6 +9,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -57,37 +58,43 @@
 							<img src="img/sale1.png" alt="Sale" title="Logo Anuncie" />
 							<br />
 							<br />
-							<input type="button" value="Entrar com o Facebook" class="facebook"/>
+							<input type="button" value="Entrar com o Facebook" class="facebook" title="Facebook" data-toggle="popover" data-placement="top" data-content="Entrar com o login do Facebook."/>
 							<br />
 							<br />
-							<input type="button" value="Entrar com o Gmail" class="gmail"/>
+							<input type="button" value="Entrar com o Gmail" class="gmail" data-toggle="popover" title="Gmail" data-content="Entrar com o login do Gmail"/>
 							<br />
 							<br />
-				    <div class="form-group">
-				      <label for="email">Email:</label>
-				      <input type="text" class="form-control" id="email" placeholder="Insira seu e-mail" name="email" required>
-				      <div class="valid-feedback">Válido.</div>
-				      <div class="invalid-feedback">Por favor preencha este campo.</div>
-				    </div>
-				    <div class="form-group">
-				      <label for="pwd">Senha:</label>
-				      <input type="password" class="form-control" id="pwd" placeholder="Insira sua senha" name="pswd" required>
-				      <div class="valid-feedback">Válido.</div>
-				      <div class="invalid-feedback">Por favor preencha este campo.</div>
-				    </div>
-						<br />
-						<br />
-						<button type="reset" class="btn btn-outline-dark">Limpar</button>
-						<button type="submit" class="btn btn-primary">Entrar</button>
-						<br />
-						<br />
-						<p><a href="criarConta.html">Esqueceu sua senha?</a></p>
-						<br />
-						<p>Não tem uma conta? <a href="criarConta.html" target="_self">Crie sua conta!</a></p>
-						<br />
-						<br />
-					</fieldset>
-				</form>
+					    <div class="form-group">
+					      <label for="email">Email:</label>
+					      <input type="text" class="form-control" id="email" placeholder="Insira seu e-mail" name="email" required>
+					      <div class="valid-feedback">Válido.</div>
+					      <div class="invalid-feedback">Por favor preencha este campo.</div>
+					    </div>
+					    <div class="form-group">
+					      <label for="pwd">Senha:</label>
+					      <input type="password" class="form-control" id="pwd" placeholder="Insira sua senha" name="pswd" required>
+					      <div class="valid-feedback">Válido.</div>
+					      <div class="invalid-feedback">Por favor preencha este campo.</div>
+					    </div>
+							<br />
+							<br />
+							<button type="reset" class="btn btn-outline-dark">Limpar</button>
+							<button type="submit" class="btn btn-primary">Entrar</button>
+							<br />
+							<br />
+							<p><a href="criarConta.html">Esqueceu sua senha?</a><i class="fas fa-unlock-alt"></i></p>
+							<br />
+							<p>Não tem uma conta? <a href="criarConta.html" target="_self">Crie sua conta!</a></p>
+							<br />
+							<br />
+						</fieldset>
+					</form>
+
+				<script>
+				$(document).ready(function(){
+				  $('[data-toggle="popover"]').popover();
+				});
+				</script>
 
 
 				<script>
@@ -108,13 +115,13 @@
 				})();
 				</script>
 			</div>
-
-			<br />
-			<div class="tuso">
-				Ao continuar, você concorda com os <a href="termos.html" target="_blank">Termos de Uso</a> e a <a href="termos.html" target="_blank">Política de Privacidade</a> da SALE, <br /> e também, em receber comunicações via e-mail e push da SALE e seus parceiros.
-			</div>
-			<br />
 		</main>
+
+		<br />
+		<div class="tuso">
+			Ao continuar, você concorda com os <a href="termos.html" target="_blank">Termos de Uso</a> e a <a href="termos.html" target="_blank">Política de Privacidade</a> da SALE, <br /> e também, em receber comunicações via e-mail e push da SALE e seus parceiros.
+		</div>
+		<br />
 
 		<footer>
 			<div id="rodape">
