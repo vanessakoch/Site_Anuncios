@@ -100,7 +100,7 @@
               </div>
             <br />
             <button type="reset" class="btn btn-outline-dark">Limpar</button>
-            <button id ="publicar" type="submit" class="btn btn-primary">Publicar</button>
+            <button id ="publicar" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Publicar</button>
             <br />
             <br />
           </form>
@@ -125,6 +125,28 @@
           </script>
       </div>
     </main>
+
+ <div class="modal" id="myModal">
+   <div class="modal-dialog">
+     <div class="modal-content">
+
+       <div class="modal-header">
+         <h4 class="modal-title">Anúncio enviado com sucesso!</h4>
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+       </div>
+
+       <div class="modal-body">
+         Publicaremos nas próximas horas.
+       </div>
+
+       <div class="modal-footer">
+         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+       </div>
+
+     </div>
+   </div>
+ </div>
+
 
     <br />
     <h5 class="centro"><a href="#topo">MENU</a> </h5>
