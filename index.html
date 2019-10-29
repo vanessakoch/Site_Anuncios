@@ -9,6 +9,10 @@
     <meta name="author" content="Vanessa Ribeiro Koch & Leonardo Rodrigues" />
     <meta name="robots" content="index,follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <link rel="icon" href="img/house.ico" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -22,20 +26,35 @@
   <body>
 
     <header>
-        <br />
-        <br />
-        <h1 id="topo">Anuncie Já!</h1>
+      <h1 id="topo">Anuncie Já!</h1>
     </header>
 
-    <nav>
-      <h2>O melhor site de busca da internet.</h2>
-      <ul class="a">
-        <li><a href="#autor">AUTOR</a></li>
-        <li><a href="login.html">CADASTRO</a></li>
-        <li><a href="assinatura.html">ASSINATURAS</a></li>
-        <li class="direita"><a class="active" href="anuncio.html">ANUNCIAR</a></li>
-        <li><a href="ajuda.html">AJUDA</a></li>
-        <li><a href="catalogo.html">ANÚNCIOS RECENTES</a></li>
+    <h2>O melhor site de busca da internet.</h2>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+      <a class="navbar-brand" href="#autor">AUTOR</a>
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            CADASTRO
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="login.html">ENTRAR</a>
+            <a class="dropdown-item" href="criarConta.html">CRIAR CONTA</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="assinatura.html">ASSINATURAS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ajuda.html">AJUDA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="catalogo.html">ANÚNCIOS RECENTES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="anuncio.html">ANUNCIAR</a>
+        </li>
       </ul>
     </nav>
 
@@ -96,7 +115,8 @@
         <br />
         <br />
         <form method="get" action="https://olx.com.br/">
-        <input type="submit" value="Buscar" class="submit" /></form>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>
         <br />
         <br />
         </div>
@@ -111,7 +131,7 @@
         <br />
         <br />
       </div>
-      <h5><a href="#topo">INÍCIO</a> </h5>
+      <h5><a href="#topo">Home</a> </h5>
     </article>
 
     <footer>
