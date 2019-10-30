@@ -67,11 +67,11 @@
   }
   h3.b {
     text-align: center;
-    border-left: 10px solid black;
-    background-color: #424242;
+    border-left: 10px solid blue;
+    background-color: lightblue;
     padding: 10px;
     font-size: 18px;
-    color: white;
+    color: blue;
   }
   h4 {
     font-family: 'Asap', sans-serif;
@@ -166,7 +166,6 @@
     width: 200px;
     margin: 10px;
     position: relative;
-    text-align: center;
   }
   .imagem::after {
     content: attr(data-title);
