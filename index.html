@@ -27,10 +27,12 @@
   <body>
 
     <header>
-      <h1 id="topo">Anuncie Já!</h1>
+      <div class="container-fluid">
+        <h1 id="topo">Anuncie Já!</h1>
+        <h2>O melhor site de busca da internet.</h2>
+      </div>
     </header>
 
-    <h2>O melhor site de busca da internet.</h2>
     <div class="container-fluid">
       <div class="col-sm-12">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
@@ -86,46 +88,49 @@
         </div>
         <br />
         <br />
-        <div class="input-field">
-          <input type="search" name="buscando" class="buscar" placeholder="Estou buscando por ..." autofocus />
-          <strong>Região: </strong>
-          <select>
-            <optgroup label="Região">
-            <option value="local_sp">SP</option>
-            <option value="local_rj">RJ</option>
-            <option value="local_mg">MG</option>
-            <option value="local_pr">PR</option>
-            <option value="local_rs">RS</option>
-            <option value="local_sc">SC</option>
-            <option value="local_es">ES</option>
-            <option value="local_ba">BA</option>
-            <option value="local_pe">PE</option>
-            <option value="local_df">DF</option>
-            <option value="local_ce">CE</option>
-            <option value="local_ms">MS</option>
-            <option value="local_go">GO</option>
-            <option value="local_am">AM</option>
-            <option value="local_rn">RN</option>
-            <option value="local_pb">PB</option>
-            <option value="local_al">AL</option>
-            <option value="local_se">SE</option>
-            <option value="local_ma">MA</option>
-            <option value="local_ac">AC</option>
-            <option value="local_ro">RO</option>
-            <option value="local_to">TO</option>
-            <option value="local_pi">PI</option>
-            <option value="local_ap">AP</option>
-            <option value="local_rr">RR</option>
-          </optgroup>
-        </select>
-        <br />
-        <br />
-        <br />
-        <form method="get" action="https://olx.com.br/">
-        <button type="submit" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vamos lá!">Buscar</button>
-        </form>
-        <br />
-        <br />
+            <div class="input-field">
+              <div class="container-field">
+                  <input type="search" name="buscando" class="buscar" placeholder="Estou buscando por ..." autofocus />
+              </div>
+              <br />
+              <strong>Região: </strong>
+              <select>
+                <optgroup label="Região">
+                <option value="local_sp">SP</option>
+                <option value="local_rj">RJ</option>
+                <option value="local_mg">MG</option>
+                <option value="local_pr">PR</option>
+                <option value="local_rs">RS</option>
+                <option value="local_sc">SC</option>
+                <option value="local_es">ES</option>
+                <option value="local_ba">BA</option>
+                <option value="local_pe">PE</option>
+                <option value="local_df">DF</option>
+                <option value="local_ce">CE</option>
+                <option value="local_ms">MS</option>
+                <option value="local_go">GO</option>
+                <option value="local_am">AM</option>
+                <option value="local_rn">RN</option>
+                <option value="local_pb">PB</option>
+                <option value="local_al">AL</option>
+                <option value="local_se">SE</option>
+                <option value="local_ma">MA</option>
+                <option value="local_ac">AC</option>
+                <option value="local_ro">RO</option>
+                <option value="local_to">TO</option>
+                <option value="local_pi">PI</option>
+                <option value="local_ap">AP</option>
+                <option value="local_rr">RR</option>
+              </optgroup>
+            </select>
+            <br />
+            <br />
+            <br />
+            <form method="get" action="https://olx.com.br/">
+            <button type="submit" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vamos lá!">Buscar</button>
+            </form>
+            <br />
+            <br />
         </div>
       </section>
     </main>
@@ -138,15 +143,15 @@
 
     <article>
       <br />
-      <p><i>Aumente sua renda!</i></p>
-      <div>
-        <a href="anuncio.html" target="_blank"><img src="img/querovender.png" alt="Anúncio em laranjado chamando atenção para iniciar uma venda" title="Faça um bom negócio" /></a>
+      <h5><i>Aumente sua renda!</i></h5>
+      <div class="container">
+        <a href="anuncio.html" target="_blank"><img src="img/querovender.png" alt="Anúncio em laranjado chamando atenção para iniciar uma venda" class="img-thumbnail" title="Faça um bom negócio" /></a>
         <br />
         <br />
       </div>
       <br />
       <br />
-      <h5 class="centro"><a href="#topo"><i class="fas fa-home"></i></a> </h5>
+      <a class="centro" href="#topo"><i class="fas fa-home"></i></a>
     </article>
 
     <footer>
@@ -154,9 +159,7 @@
       	<h3 id="autor">Classificados</h3>
       	<p>
           Todos os Direitos Reservados<br />Analise e Desenvolvimento de Sistemas<br />
-          Alunos Vanessa Ribeiro Koch & Leonardo Rodrigues<br />Programação para Internet I
-          <br />
-          <br />
+          Alunos Vanessa Ribeiro Koch & Leonardo Rodrigues<br />Programação para Internet I <br /><br />
           Visite nossas redes sociais:
         </p>
       </div>
