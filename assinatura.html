@@ -157,12 +157,32 @@
           </div>
           <br />
           <br />
-          <button id="assinatura" type="submit" class="btn btn-primary">Submit</button>
+          <button id="assinatura" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Assinar</button>
         </form>
       </div>
     </main>
     <br />
 
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h4 class="modal-title">Assinatura realizada com sucesso!</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <div class="modal-body">
+            Faça o login para começar a publicar.
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
     <footer>
       <div id="rodape">
         <h3 id="autor">Classificados</h3>

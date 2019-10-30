@@ -9,6 +9,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -55,10 +56,10 @@
 						<fieldset>
 							<img src="img/sale1.png" alt="Sale" title="Logo Anuncie" />
 							<br />
-							<input type="button" value="Entrar com o Facebook" class="facebook" />
+							<input type="button" value="Entrar com o Facebook" class="facebook" data-toggle="tooltip" data-placement="top" title="Acesse o Facebook"/>
 							<br />
 							<br />
-							<input type="button" value="Entrar com o Gmail" class="gmail" />
+							<input type="button" value="Entrar com o Gmail" class="gmail" data-toggle="tooltip" data-placement="top" title="Acesse o Gmail"/>
 							<br />
 							<br />
 				    <div class="form-group">
@@ -94,7 +95,7 @@
 						<button id="cadastrar" type="submit" class="btn btn-primary">Cadastre-se</button>
 						<br />
 						<br />
-						<p>Já tem uma conta? <a href="login.html">Entrar</a></p>
+						<p>Já tem uma conta? <a href="login.html">Entrar</a><i class="fas fa-sign-in-alt"></i></p>
 						<br />
 						<br />
 
@@ -119,6 +120,12 @@
 				})();
 				</script>
 
+				<script>
+					$(document).ready(function(){
+						$('[data-toggle="tooltip"]').tooltip();
+					});
+				</script>
+				
 			<br />
 			<div class="tuso">
 				Ao continuar, você concorda com os <a href="termos.html" target="_blank">Termos de Uso</a> e a <a href="termos.html" target="_blank">Política de Privacidade</a> da SALE, <br /> e também, em receber comunicações via e-mail e push da SALE e seus parceiros.
