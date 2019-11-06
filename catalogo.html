@@ -2,37 +2,56 @@
 <html lang="pt-br">
 
 	<head>
-
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 		<link rel="icon" href="img/catalogo.ico">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
-
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 		<title>Anúncios Recentes</title>
-
 	</head>
 
 	<body>
 
 		<header>
-			<br />
-			<br />
-      <h1 id="topo">Anuncie Já!</h1>
+			<div class="container-fluid">
+	      <h1 id="topo">Anuncie Já!</h1>
+				<h2>Anúncios Recentes</h2>
+			</div>
 		</header>
 
-		<nav>
-			<h2>Está procurando por ...</h2>
-	  	<ul class="a">
-        <li><a href="index.html">INÍCIO</a></li>
-        <li><a href="login.html">CADASTRO</a></li>
-				<li class="direita"><a class="active" href="anuncio.html">ANUNCIAR</a></li>
-        <li><a href="assinatura.html">ASSINATURAS</a></li>
-        <li><a href="ajuda.html">AJUDA</a></li>
-      </ul>
-
+		<div class="container-fluid">
+      <div class="col-sm-12">
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+					<a class="navbar-brand" href="index.html">INÍCIO</a>
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+								CADASTRO
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="login.html">ENTRAR</a>
+								<a class="dropdown-item" href="criarConta.html">CRIAR CONTA</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="assinatura.html">ASSINATURAS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="ajuda.html">AJUDA</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="anuncio.html">ANUNCIAR</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
 			<div class="menu-icone">
 				<a href="#console"><img class="menu-img" src="img/eletronics.png" alt="Seção de Eletrônicos" title="Eletrônicos e Celulares" /></a>
 	      <a href="#carro"><img class="menu-img" src="img/car.png" alt="Seção Automotiva"	title="Autos e Peças" /></a>
@@ -43,105 +62,103 @@
 				<a href="#edredom"><img class="menu-img" src="img/bedroom.png" alt="Seção de Cama/Mesa/Banho" title="Cama, Mesa e Banho" /></a>
 	   	</div>
 
-		</nav>
-
 		<br />
 
 		<main>
 			<section>
-				<h3 class="b">Anúncios Recentes</h3>
-				<br />
-				<br />
-				<div class="holder">
-
-					<div class="imagem">
-						<p>R$: 90000,00</p>
-						<img id="carro" src="img/carros.png" alt="Carro branco na rua de farol aceso" title="Carro" />
-					</div>
-
-					<div class="imagem">
-						<p>R$: 700,00</p>
-		       	<img id="instrumento" src="img/violao.png" alt="Violão posicionado em pé"	title="Instrumento Musical" />
-					</div>
-
-					<div class="imagem">
-						<p>R$: 120000,00</p>
-			      <img id="moto" src="img/motos.png" alt="Moto verde e um motoqueiro na estrada" title="Moto" />
-					</div>
-
-					<div class="imagem">
-						<p>R$: 1640,00</p>
-						<img id="celular" src="img/celulares.png" alt="Celular azul em três posições, frente, atrás e perfil" title="Celular" />
-					</div>
-
-					<div class="imagem">
-						<p>R$: 800000,00</p>
-			      <img id="casa" src="img/casas.png" alt="Casa de dois andares com as luzes acesas e portão aberto" title="Casa" />
-					</div>
-
+				<div class="container">
+						<h3 class="b">Está procurando por ...</h3>
+						<br />
+						<br />
 				</div>
 
-				<div class="holder">
+				<div class="container-fluid">
 
-					<div class="imagem">
-						<p>R$: 2000,00</p>
-			      <img id="console" src="img/console.png" alt="Caixa demonstrativa de videogame, da marca PlayStation 4" title="PlayStation" />
+						<div class="holder">
+							<div class="imagem">
+								<p>R$: 90000,00</p>
+								<img id="carro" class="img-thumbnail" src="img/carros.png" alt="Carro branco na rua de farol aceso" title="Carro" />
+							</div>
+
+							<div class="imagem">
+								<p>R$: 700,00</p>
+				       	<img id="instrumento" class="img-thumbnail" src="img/violao.png" alt="Violão posicionado em pé"	title="Instrumento Musical" />
+							</div>
+
+							<div class="imagem">
+								<p>R$: 120000,00</p>
+					      <img id="moto" class="img-thumbnail" src="img/motos.png" alt="Moto verde e um motoqueiro na estrada" title="Moto" />
+							</div>
+
+							<div class="imagem">
+								<p>R$: 1640,00</p>
+								<img id="celular" class="img-thumbnail" src="img/celulares.png" alt="Celular azul em três posições, frente, atrás e perfil" title="Celular" />
+							</div>
+
+							<div class="imagem">
+								<p>R$: 800000,00</p>
+					      <img id="casa" class="img-thumbnail" src="img/casas.png" alt="Casa de dois andares com as luzes acesas e portão aberto" title="Casa" />
+							</div>
+						</div>
+
+						<div class="holder">
+							<div class="imagem">
+								<p>R$: 2000,00</p>
+					      <img id="console" class="img-thumbnail" src="img/console.png" alt="Caixa demonstrativa de videogame, da marca PlayStation 4" title="PlayStation" />
+							</div>
+
+							<div class="imagem">
+								<p>R$: 250,00</p>
+								<img id="perfume" class="img-thumbnail" src="img/perfume.png" alt="Fotografia de vidro de perfume com líquido rosa, fechado" title="Perfume" />
+							</div>
+
+							<div class="imagem">
+								<p>R$: 145,00</p>
+								<img id="jardinagem" class="img-thumbnail" src="img/jardinagem.png" alt="Profissional fazendo serviço em um jardim" title="Jardinagem" />
+							</div>
+
+							<div class="imagem">
+								<p>R$: 80,00</p>
+								<img id="edredom" class="img-thumbnail" src="img/edredom.png" alt="Cama demonstrando um conjunto de edredom preto estendido sobre ela" title="Edredom" />
+							</div>
+
+							<div class="imagem">
+								<p>R$: 2000,00</p>
+								<img id="xbox" class="img-thumbnail" src="img/xbox.png" alt="Videogame da marca XBOX com um controle sobre ele" title="XBOX" />
+							</div>
+						</div>
+
+						<div class="holder">
+							<div class="imagem">
+								<p>R$: 150,00</p>
+								<img id="maquiagem" class="img-thumbnail" src="img/maquiagem.png" alt="Fotografia de caixas com diversos tipos de maquiagens" title="Maquiagem" />
+							</div>
+
+							<div class="imagem">
+								<p>R$: 500,00</p>
+								<img id="pneu" class="img-thumbnail" src="img/pneu.png" alt="Fotografia de um conjunto de pneu para carros" title="Pneu" />
+							</div>
+
+							<div class="imagem">
+								<p>R$: 260,00</p>
+								<img id="eletrica" class="img-thumbnail" src="img/eletricista.png" alt="Profissional eletricista fazendo serviço em fiação utilizando uma alicate" title="Eletricista" />
+							</div>
+
+							<div class="imagem">
+								<p>R$: 1200,00</p>
+								<img id="guardaroupa" class="img-thumbnail" src="img/guardaroupa.png" alt="Guarda roupa fechado com duas portas e um espelho ao meio" title="Guarda Roupa" />
+							</div>
+
+							<div class="imagem">
+								<p>R$: 150000,00</p>
+								<img id="imovel" class="img-thumbnail" src="img/imovel.png" alt="Fotografia de dois prédios de dez andares, fundo com um céu azul e palmeiras" title="Apartamento" />
+							</div>
+						</div>
 					</div>
-
-					<div class="imagem">
-						<p>R$: 250,00</p>
-						<img id="perfume" src="img/perfume.png" alt="Fotografia de vidro de perfume com líquido rosa, fechado" title="Perfume" />
-					</div>
-
-					<div class="imagem">
-						<p>R$: 145,00</p>
-						<img id="jardinagem" src="img/jardinagem.png" alt="Profissional fazendo serviço em um jardim" title="Jardinagem" />
-					</div>
-
-					<div class="imagem">
-						<p>R$: 80,00</p>
-						<img id="edredom" src="img/edredom.png" alt="Cama demonstrando um conjunto de edredom preto estendido sobre ela" title="Edredom" />
-					</div>
-
-					<div class="imagem">
-						<p>R$: 2000,00</p>
-						<img id="xbox" src="img/xbox.png" alt="Videogame da marca XBOX com um controle sobre ele" title="XBOX" />
-					</div>
-
-				</div>
-
-				<div class="holder">
-
-					<div class="imagem">
-						<p>R$: 150,00</p>
-						<img id="maquiagem" src="img/maquiagem.png" alt="Fotografia de caixas com diversos tipos de maquiagens" title="Maquiagem" />
-					</div>
-
-					<div class="imagem">
-						<p>R$: 500,00</p>
-						<img id="pneu" src="img/pneu.png" alt="Fotografia de um conjunto de pneu para carros" title="Pneu" />
-					</div>
-
-					<div class="imagem">
-						<p>R$: 260,00</p>
-						<img id="eletrica" src="img/eletricista.png" alt="Profissional eletricista fazendo serviço em fiação utilizando uma alicate" title="Eletricista" />
-					</div>
-
-					<div class="imagem">
-						<p>R$: 1200,00</p>
-						<img id="guardaroupa" src="img/guardaroupa.png" alt="Guarda roupa fechado com duas portas e um espelho ao meio" title="Guarda Roupa" />
-					</div>
-
-					<div class="imagem">
-						<p>R$: 150000,00</p>
-						<img id="imovel" src="img/imovel.png" alt="Fotografia de dois prédios de dez andares, fundo com um céu azul e palmeiras" title="Apartamento" />
-					</div>
-
-				</div>
 			</section>
 		</main>
 
-		<h5 class="centro"><a href="#topo">MENU</a> </h5>
+		<a class="centro" href="#topo"><i class="fas fa-home"></i></a>
 
 		<address>
 			Av. Expedicionários, 2150 - Campo da Água Verde, Canoinhas - SC, 89460-000.

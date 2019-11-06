@@ -1,1 +1,1 @@
-Site para Anúncios utilizado na aula de Programação para Internet
+Site de Anúncios criado para a aula de Programação para Internet

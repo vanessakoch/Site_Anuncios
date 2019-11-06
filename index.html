@@ -9,6 +9,11 @@
     <meta name="author" content="Vanessa Ribeiro Koch & Leonardo Rodrigues" />
     <meta name="robots" content="index,follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <link rel="icon" href="img/house.ico" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -22,25 +27,47 @@
   <body>
 
     <header>
-        <br />
-        <br />
+      <div class="container-fluid">
         <h1 id="topo">Anuncie Já!</h1>
+        <h2>O melhor site de busca da internet.</h2>
+      </div>
     </header>
 
-    <nav>
-      <h2>O melhor site de busca da internet.</h2>
-      <ul class="a">
-        <li><a href="#autor">AUTOR</a></li>
-        <li><a href="login.html">CADASTRO</a></li>
-        <li><a href="assinatura.html">ASSINATURAS</a></li>
-        <li class="direita"><a class="active" href="anuncio.html">ANUNCIAR</a></li>
-        <li><a href="ajuda.html">AJUDA</a></li>
-        <li><a href="catalogo.html">ANÚNCIOS RECENTES</a></li>
-      </ul>
-    </nav>
+    <div class="container-fluid">
+      <div class="col-sm-12">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+          <a class="navbar-brand" href="#autor">AUTOR</a>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                CADASTRO
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="login.html">ENTRAR</a>
+                <a class="dropdown-item" href="criarConta.html">CRIAR CONTA</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="assinatura.html">ASSINATURAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ajuda.html">AJUDA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalogo.html">ANÚNCIOS RECENTES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="anuncio.html">ANUNCIAR</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
     <main>
       <section>
+        <br />
+        <br />
         <br />
         <h4>Muitas variedades</h4>
         <div class="centro">
@@ -59,59 +86,72 @@
           <p>Anuncie aqui sua <strong>empresa</strong>, seus <strong>produtos</strong> ou <strong>serviços</strong> gratuitamente!</p>
           <br />
         </div>
-
-        <div class="input-field">
-          <input type="search" name="buscando" class="buscar" placeholder="Estou buscando por ..." autofocus />
-          <strong>Região: </strong>
-          <select>
-            <optgroup label="Região">
-            <option value="local_sp">SP</option>
-            <option value="local_rj">RJ</option>
-            <option value="local_mg">MG</option>
-            <option value="local_pr">PR</option>
-            <option value="local_rs">RS</option>
-            <option value="local_sc">SC</option>
-            <option value="local_es">ES</option>
-            <option value="local_ba">BA</option>
-            <option value="local_pe">PE</option>
-            <option value="local_df">DF</option>
-            <option value="local_ce">CE</option>
-            <option value="local_ms">MS</option>
-            <option value="local_go">GO</option>
-            <option value="local_am">AM</option>
-            <option value="local_rn">RN</option>
-            <option value="local_pb">PB</option>
-            <option value="local_al">AL</option>
-            <option value="local_se">SE</option>
-            <option value="local_ma">MA</option>
-            <option value="local_ac">AC</option>
-            <option value="local_ro">RO</option>
-            <option value="local_to">TO</option>
-            <option value="local_pi">PI</option>
-            <option value="local_ap">AP</option>
-            <option value="local_rr">RR</option>
-          </optgroup>
-        </select>
         <br />
         <br />
-        <br />
-        <form method="get" action="https://olx.com.br/">
-        <input type="submit" value="Buscar" class="submit" /></form>
-        <br />
-        <br />
+            <div class="input-field">
+              <div class="container-field">
+                  <input type="search" name="buscando" class="buscar" placeholder="Estou buscando por ..." autofocus />
+              </div>
+              <br />
+              <strong>Região: </strong>
+              <select>
+                <optgroup label="Região">
+                <option value="local_sp">SP</option>
+                <option value="local_rj">RJ</option>
+                <option value="local_mg">MG</option>
+                <option value="local_pr">PR</option>
+                <option value="local_rs">RS</option>
+                <option value="local_sc">SC</option>
+                <option value="local_es">ES</option>
+                <option value="local_ba">BA</option>
+                <option value="local_pe">PE</option>
+                <option value="local_df">DF</option>
+                <option value="local_ce">CE</option>
+                <option value="local_ms">MS</option>
+                <option value="local_go">GO</option>
+                <option value="local_am">AM</option>
+                <option value="local_rn">RN</option>
+                <option value="local_pb">PB</option>
+                <option value="local_al">AL</option>
+                <option value="local_se">SE</option>
+                <option value="local_ma">MA</option>
+                <option value="local_ac">AC</option>
+                <option value="local_ro">RO</option>
+                <option value="local_to">TO</option>
+                <option value="local_pi">PI</option>
+                <option value="local_ap">AP</option>
+                <option value="local_rr">RR</option>
+              </optgroup>
+            </select>
+            <br />
+            <br />
+            <br />
+            <form method="get" action="https://olx.com.br/">
+            <button type="submit" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Vamos lá!">Buscar</button>
+            </form>
+            <br />
+            <br />
         </div>
       </section>
     </main>
 
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+
     <article>
       <br />
-      <p><i>Aumente sua renda!</i></p>
-      <div>
-        <a href="anuncio.html" target="_blank"><img src="img/querovender.png" alt="Anúncio em laranjado chamando atenção para iniciar uma venda" title="Faça um bom negócio" /></a>
+      <h5><i>Aumente sua renda!</i></h5>
+      <div class="container">
+        <a href="anuncio.html" target="_blank"><img src="img/querovender.png" alt="Anúncio em laranjado chamando atenção para iniciar uma venda" class="img-thumbnail" title="Faça um bom negócio" /></a>
         <br />
         <br />
       </div>
-      <h5><a href="#topo">INÍCIO</a> </h5>
+      <br />
+      <br />
+      <a class="centro" href="#topo"><i class="fas fa-home"></i></a>
     </article>
 
     <footer>
@@ -119,9 +159,7 @@
       	<h3 id="autor">Classificados</h3>
       	<p>
           Todos os Direitos Reservados<br />Analise e Desenvolvimento de Sistemas<br />
-          Alunos Vanessa Ribeiro Koch & Leonardo Rodrigues<br />Programação para Internet I
-          <br />
-          <br />
+          Alunos Vanessa Ribeiro Koch & Leonardo Rodrigues<br />Programação para Internet I <br /><br />
           Visite nossas redes sociais:
         </p>
       </div>
