@@ -148,7 +148,6 @@
   address {
     text-align: center;
     font-family: 'Asap', sans-serif;
-
   }
   ol, ul {
     text-align: justify;
@@ -197,12 +196,19 @@
     font-size: 18px;
     font-family: 'Asap', sans-serif;
   }
+<<<<<<< HEAD
 
   .card {
     width:300px; 
     height: 100%;
   }
 
+=======
+  .card {
+    width:300px;
+    height: 100%;
+  }
+>>>>>>> vanessa
   .card-text {
     font-size: 14px;
     border: auto;
