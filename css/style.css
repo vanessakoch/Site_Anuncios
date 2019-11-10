@@ -1,3 +1,4 @@
+
   .centro {
     text-align: center;
   }
@@ -147,7 +148,6 @@
   address {
     text-align: center;
     font-family: 'Asap', sans-serif;
-
   }
   ol, ul {
     text-align: justify;
@@ -195,6 +195,15 @@
     color: #ffff;
     font-size: 18px;
     font-family: 'Asap', sans-serif;
+  }
+  .card {
+    width:300px;
+    height: 100%;
+  }
+  .card-text {
+    font-size: 14px;
+    border: auto;
+    align-items: center;
   }
   .gmail {
     width: 350px;
