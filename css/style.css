@@ -1,3 +1,4 @@
+
   .centro {
     text-align: center;
   }
@@ -195,6 +196,17 @@
     color: #ffff;
     font-size: 18px;
     font-family: 'Asap', sans-serif;
+  }
+
+  .card {
+    width:300px; 
+    height: 100%;
+  }
+
+  .card-text {
+    font-size: 14px;
+    border: auto;
+    align-items: center;
   }
   .gmail {
     width: 350px;
